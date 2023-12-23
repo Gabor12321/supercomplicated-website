@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> 13 exercises nested flexbox</title>
+    <style>
+      .flexbox,.nested-flexbox,.flexbox1 {
+        display: flex;
+      }
+      .nested-flexbox {
+        justify-content: center;
+        align-items: center;
+      }
+      .nested-flexbox1{
+        display: flex;
+        flex-direction: column;
+      }
+      .nested-flexbox1-lvl2 {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexbox">
+      <div class="nested-flexbox" style="width: 100px; height: 50px; background-color: lightpink;">item1</div>
+      <div style="width: 200px; background-color: lightblue;"></div>
+    </div><br>
+
+    <div class="flexbox1">
+      <div style="width: 100px; height: 50px; background-color: lightpink;"></div>
+      <div class="nested-flexbox1" style="width: 200px; background-color: lightblue;">
+        <div>row1</div>
+        <div class="nested-flexbox1-lvl2">
+          <div style=" background-color: black;  color: white;">row2</div>
+          <div style=" background-color: black;  color: white;">row2</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

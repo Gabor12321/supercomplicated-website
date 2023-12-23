@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>7-exercises- images and text boxes</title>
+    <style>
+      .cat {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position:center;
+        border-radius: 50%;
+      }
+      .twitter-cat {
+        width: 36px;
+        height: 36px;
+        object-fit: cover;
+        object-position:center;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+      .twitter-input {
+        height: 36px;
+        vertical-align: middle;
+        border: none;
+        width: 190px;
+      }
+      .twitter {
+        border: 1px solid black;
+        width: 300px;
+        padding: 5px;
+      }
+      .tweet-btn {
+        color: white;
+        background-color: rgb(81, 81, 240);
+        padding: 5px 10px; 
+        border: none;
+        border-radius: 15px;
+        vertical-align: middle;
+        
+      }
+      .text-rounded-corners {
+        border-radius: 5px;
+        border-width: 1px;
+        padding-bottom: 10px;
+      }
+      .text-with-shadow {
+        border: none;
+        box-shadow: 10px 10px 10px rgba(0,0,0, 0.25);
+        width: 180px;
+      }
+      .email-label {
+        font-size: small;
+      }
+      .email-input {
+        width: 290px;
+      }
+      p {
+        margin: 0px;
+        margin-bottom: 3px;
+      }
+      .agree {
+        font-size: small;
+        margin-top: 12px;
+      }
+      .agree-btn {
+        margin-top: 8px;
+        color: white;
+        width: 300px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color: rgb(99, 99, 241);
+        border: none;
+        border-radius: 20px;
+      }
+    </style>
+  </header>
+  <body>
+    <img class="cat" src="cat.webp">
+    <input class="text-rounded-corners" type="text" placeholder="Search">
+
+    <input class="text-with-shadow" type="text" placeholder="Search Google or type a URL"><br>
+
+    <p>
+      <label class="email-label" for="email">Email</label>
+    </p>
+    <input class="email-input" name="email" class="email" type="text">
+
+    <p class="agree">
+      By clicking Agree &amp; Join, you agree to the Privacy Policy.
+    </p>
+    <button class="agree-btn">Agree &amp; Join</button>
+
+    <p class="twitter">
+      <label for="twitter-input"><img class="twitter-cat" src="cat.webp"></label>
+      <input class="twitter-input" name="twitter-input" type="text" placeholder="What's happening?">
+      <button class="tweet-btn">Tweet</button>
+    </p>
+
+  </body>
+</html>

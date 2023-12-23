@@ -1,0 +1,19 @@
+p {
+  font-family: Montserrat;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.model {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-size: xx-large;
+}
+.order {
+  margin-top: 10px;
+  text-align: center;
+}
+.order-span {
+  text-align: center;
+  text-decoration: underline;
+}

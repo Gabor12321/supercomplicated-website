@@ -1,0 +1,33 @@
+.back,
+.next {
+vertical-align: top;
+padding: 10px 5px;
+border: 1px solid gray;
+border-radius: 2px;
+}
+
+.stretch {
+  padding: 10px 13px;
+  border: none;
+  background-color: green;
+  color: white;
+  transition: padding 0.35s;
+}
+.stretch:hover {
+  padding: 20px 26px;
+}
+.shadow {
+  padding: 10px 13px;
+  border: none;
+  background-color: green;
+  color: white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+  transition: padding-left 0.25s,padding-right 0.25s;
+}
+.shadow:hover {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.shadow:active {
+  box-shadow: none;
+}

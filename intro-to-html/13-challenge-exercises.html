@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> 13 challenge exercises nested flexbox</title>
+    <style>
+      p {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        line-height: 24px;
+      }
+      .ios-div {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        padding: 25px;
+        padding-bottom: 0;
+      }
+      .main-row-div {
+        display: flex;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .avatar {
+        object-fit: cover;
+        object-position: center;
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+        margin-top: 6px;
+        margin-right: 5px;
+      }
+      .avatar-div {
+        margin-right: 5px;
+      }
+      .secondary-1st-row {
+        display: flex;
+        justify-content: space-between;
+      }
+      .secondary-2nd-row{
+        margin-top: 4px;
+        margin-bottom: 4px;
+      }
+      .grey-pargh {
+        color: gray;
+      }
+      .strong-pargh {
+        font-weight: 700;
+      }
+      .inboxes {
+        margin-bottom: 10px;
+      }
+      .ios-div3 {
+        box-shadow: 0px 4px 18px -8px rgba(0,0,0,.9);
+      }
+
+      .twitter-design {
+        display: flex;
+        width: 400px;
+        padding: 8px;
+      }
+      .main-info {
+        display: flex;
+        flex-direction: column;
+      }
+      .sub-twitter-design {
+        display: flex;
+        box-shadow: 4px 5px 15px -10px rgba(0,0,0,.9);
+        border-radius: 7px;
+        margin-top: 10px;
+      }
+
+      .grey-span {
+        color: gray;
+      }
+      .bold-span {
+        font-weight: 700;
+      }
+      .sub-avatar-div {
+        background-color: rgb(172, 171, 171);
+        width: 100px;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+        margin-right: 5px;
+      }
+      .sub-info {
+        flex: 1;
+        margin-left: 20px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+
+      }
+    </style>
+  </head>
+  <body>
+      <div class="ios-div">
+        <div class="inboxes"><p class="grey-pargh">ALL INBOXES</p></div>
+        <div class="main-row-div">
+          <div class="avatar-div"><img class="avatar" src="cat.webp"></div>
+          <div>
+            <div class="secondary-1st-row">
+              <div><p class="strong-pargh">Chewy Promotions</p></div>
+              <div><p class="grey-pargh">4:58PM</p></div>
+            </div>
+            <div class="secondary-2nd-row"><p class="strong-pargh">Biggest sales of the year!</p></div>
+            <div><p class="grey-pargh">Hey there! We're writing to tell you about our...</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ios-div">
+        <div class="main-row-div">
+          <div class="avatar-div"><img class="avatar" src="cat3.jpg"></div>
+          <div>
+            <div class="secondary-1st-row">
+              <div><p class="strong-pargh">Best Buy</p></div>
+              <div><p class="grey-pargh">12:32PM</p></div>
+            </div>
+            <div class="secondary-2nd-row"><p class="strong-pargh">Your Best Buy eReceipt</p></div>
+            <div><p class="grey-pargh">Thank you for shipping at Best Buy, here is...</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ios-div ios-div3">
+        <div class="main-row-div">
+          <div class="avatar-div"><img class="avatar" src="cat2.jpg"></div>
+          <div>
+            <div class="secondary-1st-row">
+              <div><p class="strong-pargh">Netflix</p></div>
+              <div><p class="grey-pargh">9:00AM</p></div>
+            </div>
+            <div class="secondary-2nd-row"><p class="strong-pargh">Here's what's coming soon to Netflix</p></div>
+            <div><p class="grey-pargh">Brand new movies and shows, old favorites...</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="twitter-design">
+        <div class="avatar-div">
+          <img class="avatar" src="cat.webp">
+        </div>
+        <div class="main-info">
+          <div class="sub1-info">
+            <p><span class="bold-span">supersimple.dev</span> <span class="grey-span"> &#64;SuperSimpleDev</span></p>
+            <p> What is backend development? A complete overview. New video is up!</p>
+          </div>
+
+          <div class="sub-twitter-design">
+            <div class="sub-avatar-div"></div>
+            <div class="sub-info">
+              <p><span class="grey-span">youtube.com</span></p>
+              <p>Backend web development &#9866; a complete overview (2021) </p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

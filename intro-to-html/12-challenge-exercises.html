@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> 12 challenge exercises - Flexbox</title>
+      <style>
+        p {
+          margin: 0;
+        }
+        .users {
+          display: flex;
+          flex-direction: column;
+          width: 300px;
+          border: 1px solid lightblue;
+          padding: 10px;
+        }
+        .user {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          align-items: center;
+          margin-top: 8px;
+        }
+        .pics {
+          object-fit: cover;
+          object-position: center;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+        }
+        .user-bric {
+          margin-left: 8px;
+
+        }
+        .usr-pfl-pic {
+          margin: 0;
+        }
+        .info-div {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+
+        button {
+          border: none;
+          background-color: rgb(104, 107, 241);
+          color: white;
+          border-radius: 9%;
+          padding: 8px 12px;
+        }
+        .search-bar-div {
+          border: 1px solid black;
+          display: flex;
+          flex-direction: row;
+          width: 1;
+          justify-content: space-between;
+          height: 45px;
+          align-items: center;
+          padding: 5px;
+          background-color: blueviolet;
+        }
+        .home-div{
+          width: 150px;
+          font-family: Arial, Helvetica, sans-serif;
+          height: 60%;
+          padding-top: 7px;
+        }
+        
+        .input-div {
+          height: 60%;
+          flex: 1;
+          max-width: 800px;
+        }
+        .btn-div {
+          width: 100px;
+          height: 60%;
+          margin-left: 50px;
+        }
+        .btn-dl {
+          height: 100%;
+          width: 100%;
+          border-radius: 0;
+          border: 1px solid white;
+          background-color: transparent;
+          padding: 0;
+
+        }
+        .input {
+          border-radius: 15px;
+          padding-left: 12px;
+        }
+    
+      </style>
+  </head>
+  <body>
+    <div class="users">
+      <div style="margin: 0;" class="user">
+        <div class="usr-pfl-pic user-bric">
+          <img class="pics" src="cat.webp">
+        </div>
+        <div class="info-div user-bric">
+          <div><p style="font-weight: 700;">Oliver</p></div>
+          <div><p style="color: rgb(160, 160, 160);">the cat</p></div>
+          <div><p style="color: rgb(160, 160, 160);">Popular</p></div>
+        </div>
+        <div class="usr-btn user-bric">
+          <button>Follow</button>
+        </div>
+      </div>
+
+      <div class="user">
+        <div class="usr-pfl-pic">
+          <img class="pics" src="cat2.jpg">
+        </div>
+        <div class="info-div user-bric">
+          <div><p style="font-weight: 700;">Mimi</p></div>
+          <div><p style="color: rgb(160, 160, 160);">sleepy cat</p></div>
+          <div><p style="color: rgb(160, 160, 160);">Popular</p></div>
+        </div>
+        <div class="usr-btn user-bric">
+          <button>Follow</button>
+        </div>
+      </div>
+
+      <div class="user">
+        <div class="usr-pfl-pic user-bric">
+          <img class="pics" src="cat3.jpg">
+        </div>
+        <div class="info-div user-bric">
+          <div><p style="font-weight: 700;">Rex</p></div>
+          <div><p style="color: rgb(160, 160, 160);">happy bulldog</p></div>
+          <div><p style="color: rgb(160, 160, 160);">Popular</p></div>
+        </div>
+        <div class="usr-btn user-bric">
+          <button>Follow</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="search-bar-div">
+      <div class="home-div item"><p style="color: white; " class="home-class">Home</p></div>
+      <div class="input-div item"><input class="input" style="width: 100%; height: 100%; border: 0;" type="text" placeholder="Search"></div>
+      <div class="btn-div item"><button class="btn-dl">Download</button></div>
+    </div>
+  </body>
+</html>

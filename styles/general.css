@@ -1,0 +1,19 @@
+p {
+  margin: 0;
+}
+
+body {
+  /*  This style will be inherited */
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding-top: 80px;
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color: rgb(228, 228, 228);
+}
+
+@media (min-width: 1001px) {
+  body {
+    padding-left: 326px;
+  }
+}
